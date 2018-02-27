@@ -1,0 +1,157 @@
+.reviews {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  // height: 100vh;
+  position: relative;
+}
+
+.reviews__container {
+  min-height: rem(650px);
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-content:center;
+  flex-wrap:wrap;
+    @include tablets() {
+
+       width: 100%;
+
+    }
+
+     @include phones() {
+
+       width: 100%;
+
+    }
+
+}
+
+.reviews__inner:hover .reviews__item {
+  opacity: 1; 
+   
+}
+
+.reviews__inner{
+  display: flex;
+  position: relative;
+  width: 25%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  
+   //     @media screen and (max-width: 1350px) {
+   //     width: 33.3%;
+   //     height: 33.3%;
+   // }
+   @include tablets() {
+       flex-basis: 50%;
+       height: 25%;
+
+    }
+
+    @include phones() {
+       width: 50%;
+       height: 25%;
+    }
+}
+
+
+
+.reviews__img {
+  width: 100%;
+
+  height: 100%;
+  
+  filter: grayscale(1);
+  object-fit: cover;
+  position: relative;
+
+  
+  // @include tablets() {
+  //      width: 49vw;
+  //      height: 25vh;
+       
+  //   }
+  //   @include phones() {
+  //      width: 48vw;
+  //      height: 25vh;
+  //   }
+}
+
+
+
+
+.reviews__item {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 90%;
+  width: 70%;
+  text-align: left;
+  margin: auto; 
+  position: absolute;
+  align-self:center;
+    @include tablets() {
+      height: 100%;
+      width: 100%;
+       align-items: center;
+    text-align: center
+    }
+}
+
+.reviews__title {
+  font-size: rem(14px);
+  color: #ffffff;
+  font-family: gagalin;
+  // margin-top: 5vh;
+  margin-bottom: rem(30px);
+  @include tablets() {
+      margin-bottom: 0;
+    }
+ 
+}
+
+.reviews__text {
+  font-size: rem(14px);
+  color: #ffffff;
+  
+       @include tablets() {
+        width: 95%;
+    }
+
+      @include phones() {
+        display: none;
+    }
+   
+}
+
+.btn__more{
+  width: rem(110px);
+  border-radius: rem(5px);
+  padding-top: rem(2px);
+  margin-top: rem(20px);
+  border:none;
+  // font-family: Ubuntu;
+  background-color:  #2f3234;
+  color:  #ffffff;
+  font-size: rem(13px);
+  font-weight: 500;
+  line-height: rem(30px);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .4s;
+
+  &:hover{
+    background-color: #252729;
+  }
+
+}

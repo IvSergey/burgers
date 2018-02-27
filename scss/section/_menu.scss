@@ -1,0 +1,160 @@
+.menu {
+  background: url('../img/background/bg-menu.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  // height: 100vh;
+
+
+}
+
+.menu__container{
+  flex-direction:row;
+  justify-content: flex-end;
+}
+
+.menu__accordeon{
+  position: absolute;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+.menu__title{
+  top: 10%;
+  left: 5%;
+  position: absolute;
+  font-family: gagalin;
+  color:  #ffffff;
+  font-size: rem(72px);
+  font-weight: 400;
+  cursor: pointer;
+  transition: .5s;
+
+  &:hover{
+    color: #fa8507;
+  }
+  
+  text-align: left;
+    @include tablets() {
+        font-size: rem(50px);
+    }
+  
+}
+
+.menu__list{
+  display: flex;
+}
+
+.menu__item{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+      align-items: stretch;
+    color: #ffffff;
+ 
+  
+}
+
+.menu__text{
+    
+  color: #ffffff;
+  width: 0;
+  overflow: hidden;
+}
+
+.menu__text-active{
+   padding: rem(10px) rem(10px);
+    width: 40vw;
+    display: block;
+    background-color: rgba(47, 50, 52, 0.8);
+    transition: .5s;
+    @include tablets() {
+        width: 100%;
+        
+    }
+}
+
+
+
+.menu__bg_meat{
+  background-image:url('../img/background/bg-meat.png') ; 
+  // background-position-x: -42%;
+  
+  background-size: cover;
+
+}
+
+.menu__bg_veg{
+  background-image:url('../img/background/bg-veg.png') ; 
+  // background-position-x: -20%;
+  background-size: cover;
+}
+
+.menu__bg_diet{
+  background-image:url('../img/background/bg-diet.png') ; 
+  // background-position-x: right;
+  background-size: cover;
+}
+
+
+.menu__bg{
+  background-color: #4c4e50;
+  position: relative;
+  width: rem(80px);
+  cursor: pointer;
+  transition: .4s;
+
+    &:hover{
+      background-color: #030303;
+    }
+
+
+       @media screen and (max-width: 380px) {
+       width: rem(50px);
+    }
+
+    //   @include phones() {
+    //    width: 30px;
+    // }
+}
+
+.menu__subtitle{
+
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    font-family: "Gagalin";
+    font-size: 2.5rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transform-origin: 0 0;
+   
+    transform: rotate(-90deg) translateX(-50%) translateY(-50%);
+    transition: .5s;
+
+  &:hover{
+    color: #fa8507;
+  }
+
+
+
+    //   @include phones() {
+    //    font-size: rem(20px);
+    // }
+}
+
+h3{
+  margin-bottom: 0px;
+}
+
+.overlay-window {
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(47, 50, 52, 0.95);
+  display: block;
+
+}

@@ -1,0 +1,40 @@
+.wrapper{
+  position: relative;
+	height: 100%;
+  width: 100%;
+    overflow: hidden;
+}
+
+.maincontent {
+  transition: 1s;
+  // transform: translateZ(0);
+  will-change: transform;
+  height: 100%;
+  min-height: 650px;
+}
+
+.container {
+  height: 100%;
+  min-height: rem(650px);
+  width: 100%;
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  //   @include tablets() {
+  //   padding: 0 50px;
+  // }
+}
+
+.section {
+  overflow: hidden;
+  height: 100%;
+  background-color: rgba(0,0,0,0.31);
+  width: 100%;
+  min-height: rem(650px);
+}
+
+

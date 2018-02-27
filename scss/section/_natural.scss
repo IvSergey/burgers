@@ -1,0 +1,136 @@
+.natural{
+	background: url('../img/background/bg-first.jpg')  center center no-repeat;
+	background-size: cover;
+    display: flex;
+    // height: 100vh;
+    
+    
+}
+
+.natural__container{
+   
+
+
+   
+	
+    @include tablets() {
+        
+       width: 100%;
+
+    }
+
+     @include phones() {
+
+       width: 100%;
+
+    }
+	
+}
+
+
+
+.natural__content{
+	display: flex;
+    width: 100%;
+    margin-top: rem(83px);
+
+    @include tablets() {
+        width: 100%;
+        flex-direction:column;
+        align-items:center;
+        padding-top: 63px;
+        margin-top: 0;
+
+    }
+    @include phones() {
+        width: 100%;
+        flex-direction:column;
+        align-items:center;
+        padding-top: 63px;
+        margin-top: 0;
+
+  
+    }
+
+}
+
+
+.banner{
+	width: 50%;
+     @include tablets() {
+
+        width: auto;
+
+    }
+}
+
+.img-pic{
+    @include phones() {
+
+        width: 100%;
+
+    }
+}
+
+
+
+.desc{
+	padding-top: 8rem;
+    width: 50%;
+
+    @include tablets() {
+        padding-top: 0;
+        text-align: center;
+        width: auto;
+    }
+
+
+    
+}
+
+
+.desc__title{
+    font-family: gagalin;
+    color: #f9b43b;
+    font-size: rem(72px);
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: rem(11px);
+
+    @include tablets() {
+       
+        text-align: center;
+        font-size: rem(50px);
+    }
+}
+
+.desc__text{
+	
+    font-family: lifehack;
+    color: #ffffff;
+    font-size: rem(65px);
+    font-weight: 500;
+    text-align: left;
+    line-height: 0.94;
+    letter-spacing: rem(-2px);
+
+    @include tablets() {
+        width: 462px;
+        text-align: center;
+        font-size: rem(50px);
+    }
+    
+
+}
+
+.arrow{
+    margin-top: rem(191px);
+}
+
+.scroll{
+	margin-top: 8rem;
+	
+    
+    
+}
+

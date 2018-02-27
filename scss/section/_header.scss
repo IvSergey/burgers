@@ -1,0 +1,192 @@
+
+
+.header {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: rem(10px);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.header__container{
+
+  min-height: 100%;
+   
+  
+  
+}
+
+.header__content{
+  display: flex;
+    width: 100%;
+
+}
+
+.header__logo {
+  margin-right: auto;
+  
+}
+
+.logo__img{
+	/*padding-top: 20px;*/
+    width: rem(90px);
+	height: rem(70px);
+}
+
+// .header__menu{
+//   padding-top: rem(12px);
+
+//   @include tablets() {
+//     display: none;
+//   }
+// }
+
+.nav{
+  display: flex;
+    align-items: center;
+}
+
+.nav__list, .order-link{
+  display: inline-block;
+}
+
+
+
+.nav__list{
+
+
+   @include tablets() {
+
+    display: none;
+  }
+}
+	
+  
+
+.nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+
+ 
+
+  &:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: ' ';
+    @include circle(5px, #fff);
+    margin: 0 rem(12px);
+  }
+  
+  &:first-child:before {
+    display: none;
+  }
+}
+
+
+
+
+
+
+.nav__link {
+  color: #ffffff;
+  font-size: rem(13px);
+  font-weight: 500;
+  line-height: 1.42;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .4s;
+  &:hover {
+    text-decoration: underline;
+    color: #c44825;
+  }
+}
+
+
+
+
+
+
+.order-link{
+  margin: 0 rem(12px);
+	width: rem(97px);
+	border-radius: rem(5px);
+	padding-top: rem(2px);
+  
+	border:none;
+	// font-family: Ubuntu;
+	background-color:  #e45028;
+	color:  #ffffff;
+	font-size: rem(13px);
+	font-weight: 500;
+	line-height: rem(30px);
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+  transition: .4s;
+
+   &:hover {
+    
+    background-color: #c44825;
+  }
+
+          @media screen and (max-width: 360px) {
+           margin: 0 rem(8px);
+   }
+    
+}
+
+.gamb__btn{
+
+     position: relative;
+    display: none;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+
+    
+
+   &:before{
+    top: -10px;
+    left: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+
+   
+   }
+
+   &:after{
+    top: 10px;
+    left: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+   
+   }
+
+   @include tablets() {
+    display: inline-block;
+        display: initial;
+    // z-index: 10;
+  }
+}
+
